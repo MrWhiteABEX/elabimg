@@ -71,7 +71,7 @@ RUN make install
 FROM alpine:3.14
 
 # this is versioning for the container image
-ENV ELABIMG_VERSION 3.0.1
+ENV ELABIMG_VERSION 3.0.3
 
 # select elabftw tag
 ARG ELABFTW_VERSION=demo
@@ -129,13 +129,13 @@ RUN apk upgrade -U -a && apk add --no-cache \
     php8-opcache \
     php8-openssl \
     php8-pdo_mysql \
-    php8-pear \
     php8-pecl-imagick \
     php8-phar \
     php8-redis \
     php8-session \
     php8-sodium \
     php8-tokenizer \
+    php8-xml \
     php8-xmlwriter \
     php8-zip \
     php8-zlib \
